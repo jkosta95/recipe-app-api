@@ -1,6 +1,7 @@
 FROM python:3.7-alpine
 MAINTAINER Kosta Jevtic
 
+#it is recommended to use this environment because we don't want to buffer the outputs
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
